@@ -2,12 +2,12 @@
 
 namespace App\Exports;
 
-use App\Models\Event;
 use Maatwebsite\Excel\Concerns\FromQuery;
 use Maatwebsite\Excel\Concerns\WithHeadings;
 use Maatwebsite\Excel\Concerns\ShouldAutoSize;
 use Maatwebsite\Excel\Concerns\WithMapping;
 use Maatwebsite\Excel\Concerns\WithChunkReading;
+use Modules\Events\Models\Event;
 
 class UpcomingEventsExport implements FromQuery, WithHeadings, WithMapping, ShouldAutoSize, WithChunkReading
 {

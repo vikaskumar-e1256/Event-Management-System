@@ -11,11 +11,26 @@
         <testsuite name="Feature">
             <directory>tests/Feature</directory>
         </testsuite>
+        <!-- For Modules Test Cases -->
+        <testsuite name="Modules">
+            <directory suffix="Test.php">./Modules/*/tests/Feature</directory>
+            <directory suffix="Test.php">./Modules/*/tests/Unit</directory>
+        </testsuite>
     </testsuites>
+
     <source>
         <include>
             <directory>app</directory>
+            <directory suffix=".php">./Modules</directory> <!-- For Modules Test Cases -->
         </include>
+        <!-- For Modules Test Cases -->
+        <exclude>
+            <directory suffix=".php">./Modules/*/config</directory>
+            <directory suffix=".php">./Modules/*/database</directory>
+            <directory suffix=".php">./Modules/*/resources</directory>
+            <directory suffix=".php">./Modules/*/routes</directory>
+            <directory suffix=".php">./Modules/*/tests</directory>
+        </exclude>
     </source>
     <php>
         <env name="APP_ENV" value="testing"/>

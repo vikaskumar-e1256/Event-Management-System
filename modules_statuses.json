@@ -1,0 +1,6 @@
+{
+    "Auth": true,
+    "Events": true,
+    "Tickets": true,
+    "Payment": true
+}

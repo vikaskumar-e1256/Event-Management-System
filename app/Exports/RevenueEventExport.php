@@ -2,11 +2,11 @@
 
 namespace App\Exports;
 
-use App\Models\Event;
-use App\Models\TicketType;
 use Maatwebsite\Excel\Concerns\FromArray;
 use Maatwebsite\Excel\Concerns\WithHeadings;
 use Maatwebsite\Excel\Concerns\WithStyles;
+use Modules\Events\Models\Event;
+use Modules\Tickets\Models\TicketType;
 use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 
 class RevenueEventExport implements FromArray, WithHeadings, WithStyles

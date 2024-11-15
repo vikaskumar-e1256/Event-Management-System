@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Site;
 
-use App\Models\Event;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
+use Modules\Events\Models\Event;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Cache;

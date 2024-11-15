@@ -6,7 +6,7 @@
                 Dashboard
             </a>
         </li>
-        @can('create', App\Models\Event::class)
+        @can('create', \Modules\Events\Models\Event::class)
         <li class="nav-item">
             <a class="nav-link" href="{{ route('events.create') }}">
                 Create Event
